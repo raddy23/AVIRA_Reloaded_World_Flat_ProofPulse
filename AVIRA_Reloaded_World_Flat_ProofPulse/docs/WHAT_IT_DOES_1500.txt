@@ -1,0 +1,11 @@
+Problem: Software teams face recurring API failures, difficult-to-reproduce incidents and fragmented evidence. Existing monitoring tools raise alerts, but reproducing incidents, independently verifying results and documenting proof often require separate manual steps.
+
+Solution: AVIRA ProofPulse turns incidents into repeatable evidence challenges. A working prototype captures synthetic HTTP 200/503 observations, supports challenge-and-recheck, generates SHA-256 fingerprints, creates Ed25519-signed receipts and exports investigation reports.
+
+Our USP: Detect → Reproduce → Challenge → Verify → Generate Proof → Reward → Repeat.
+
+Differentiation: Instead of stopping at an alert, ProofPulse combines repeatable checks, evidence integrity and a transparent contributor-payment path. This supports traceability and collaboration across engineering teams.
+
+$WIF integration: The product implements an opt-in wallet flow to directly pay an independent verifier in $WIF on Robinhood Chain (chain ID 4663). A funded wallet holder must explicitly authorize the transfer. The app checks the resulting token Transfer event and stores its explorer link with the incident. New verification challenges can encourage repeat use.
+
+Status: Local incident checks, signed evidence and transaction-verification code are tested. No live funded $WIF transfer, escrow or public deployment has been verified yet.
